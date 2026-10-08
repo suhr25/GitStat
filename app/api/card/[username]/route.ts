@@ -1,6 +1,8 @@
 import { getDashboard, GitHubError } from "@/lib/github";
 
 export const revalidate = 3600;
+// Up to ten paged GitHub searches run per uncached request.
+export const maxDuration = 60;
 function escape(value: string) { const entities: Record<string, string> = { "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&apos;", '"': "&quot;" }; return value.replace(/[&<>'\"]/g, (c) => entities[c] ?? c); }
 
 export async function GET(_: Request, { params }: { params: Promise<{ username: string }> }) {

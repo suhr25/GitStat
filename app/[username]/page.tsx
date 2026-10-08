@@ -3,6 +3,8 @@ import Dashboard from "@/components/dashboard";
 import { getDashboard, GitHubError } from "@/lib/github";
 
 export const revalidate = 3600;
+// Up to ten paged GitHub searches run per uncached request.
+export const maxDuration = 60;
 
 export default async function UserPage({ params }: { params: Promise<{ username: string }> }) {
   const { username } = await params;

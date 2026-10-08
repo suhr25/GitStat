@@ -15,7 +15,7 @@ GitHub’s contribution records represent GitHub’s definition of a contributio
 
 ## Setup
 
-1. Use Node.js 20.9 or newer.
+1. Use Node.js 22 or newer (the code uses `Object.groupBy`).
 2. Install packages: `npm install`.
 3. Copy `.env.example` to `.env.local`.
 4. Create a [fine-grained personal access token](https://github.com/settings/personal-access-tokens/new). Set repository access to **Public Repositories**. No write permissions or repository permissions are needed for public data.
