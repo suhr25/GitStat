@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <main className="mx-auto flex min-h-screen max-w-xl items-center px-5"><section className="panel w-full"><p className="eyebrow">404 / no profile</p><h1 className="mt-2 text-3xl font-semibold">That GitHub user wasn’t found.</h1><p className="mt-3 text-zinc-600 dark:text-zinc-300">Check the spelling or search for another public GitHub account.</p><Link href="/" className="mt-6 inline-block rounded-lg bg-indigo-600 px-4 py-2 text-white">Search GitHub</Link></section></main>; }
